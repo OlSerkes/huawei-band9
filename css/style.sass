@@ -1,0 +1,1432 @@
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+#huaweiBand9 a
+    color: inherit
+    text-decoration: none
+
+#huaweiBand9 ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#huaweiBand9 .bc-description__content p
+    margin-bottom: 0
+
+#huaweiBand9 .bc-description__content h4
+    text-align: left
+
+#huaweiBand9 p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#huaweiBand9 h1,
+#huaweiBand9 h2,
+#huaweiBand9 h4,
+#huaweiBand9 h4,
+#huaweiBand9 h5,
+#huaweiBand9 h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#huaweiBand9
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#huaweiBand9 p::first-letter
+    padding-left: 0
+
+#huaweiBand9 img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+
+#huaweiBand9 img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+@mixin adaptive-size($property, $minSize, $maxSize, $maxWidth)
+    $size: calc( #{$minSize}px + ($maxSize - $minSize) * ((100vw - 320px)/($maxWidth - 320)))
+    #{$property}: $size
+
+%flex-img
+    position: relative
+    z-index: 5
+    padding-bottom: 58%
+    img
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: 6
+        object-fit: cover
+        top: 0
+        left: 0
+
+@mixin height-elem($property, $topOffset)
+    $size: calc(100% - #{$topOffset}px)
+    #{$property}: $size
+
+//========================================================================================================================================================
+#huaweiBand9 .huaweiBand9
+    &__container
+        box-sizing: border-box
+        max-width: 1006px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 50px, $lineHeight: 1.2)
+            margin: 20px 0px
+            color: #1e2022
+        h3
+            @include fonts($fontSize: 30px, $lineHeight: 1.2)
+            text-align: left
+            margin-bottom: 20px
+            padding-top: 0
+            color: #1e2022
+        h4
+            @include fonts($fontSize: 18px, $lineHeight: 1.2)
+            margin-bottom: 15px
+        p
+            @include fonts($fontSize: 16px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            color: #787779
+
+#huaweiBand9 .huaweiband9-container
+    max-width: 860px
+    margin: 0 auto
+
+#huaweiBand9 .huaweiband9-top
+    &__inner
+        margin-bottom: 100px
+    &__header
+        max-width: 350px
+        margin: 0 auto
+        padding: 0 15px
+        img
+            margin: 0 auto 20px
+        p
+            text-align: center
+
+#huaweiBand9 .column-huaweiBand9
+    max-width: 860px
+    margin: 0 auto
+    padding: 0 15px
+    &__row
+        display: grid
+        grid-auto-flow: dense
+        gap: 15px
+    &__item
+        position: relative
+        width: 100%
+        height: 100%
+        background-size: cover
+        border-radius: 15px
+    &__image
+        position: absolute
+        z-index: 5
+        bottom: 0
+        right: 0
+    &__text
+        position: absolute
+        z-index: 5
+        p
+            color: rgba(0, 0, 0, 0.6)
+
+#huaweiBand9 .huaweiband9-mainCol
+    &__row
+        grid-template-columns: 1.48fr 1fr 1fr
+        grid-auto-rows: 197px 197px 215px
+        margin-bottom: 127px
+    &__item
+        &:nth-child(1)
+            background: url('../img/img02_1.jpg') 0 0 no-repeat
+            grid-row: span 2
+        &:nth-child(2)
+            background: url('../img/img02_2.jpg') 0 0 no-repeat
+            grid-column: span 2
+        &:nth-child(3)
+            background: url('../img/img02_3.jpg') 0 0 no-repeat
+            grid-column: span 2
+        &:nth-child(4)
+            background: url('../img/img02_4.jpg') 0 0 no-repeat
+            grid-row: span 2
+        &:nth-child(5)
+            background: #edf9ff
+        &:nth-child(6)
+            background: #effffe
+        &:nth-child(7)
+            background: url('../img/img02_7.png') 0 0 no-repeat
+            grid-column: span 2
+    &__text
+        top: 20px
+        left: 20px
+        right: 20px
+        &_01
+            p
+                max-width: 120px
+                &:nth-of-type(1)
+                    margin-bottom: 36px
+            img
+                &:nth-of-type(1)
+                    margin-bottom: 36px
+        &_02, &_03
+            top: 50%
+            transform: translateY(-50%)
+            right: 55%
+        &_05
+            right: 15%
+        &_07
+            top: 50%
+            transform: translateY(-50%)
+            right: 60%
+    &__image
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 15px
+        right: auto
+    &__text-items
+        display: flex
+        gap: 10px
+    &__text-item
+        p
+            font-size: 12px
+            span
+                font-size: 24px
+                font-weight: 700
+                background-image: linear-gradient(135deg, #96f8da, #65cba7)
+                background-clip: text
+                color: transparent
+
+#huaweiBand9 .huaweiband9Fashion-banner
+    &__text
+        padding: 10px 20px
+        max-width: 860px
+        margin: 0 auto
+        h4
+            color: #ffbe0b
+
+#huaweiBand9 .huaweiband9Bezel-banner
+    &__bg
+        @include bg-image($url: url("../img/bg04.jpg"))
+        height: 688px
+        overflow: hidden
+    &__inner
+        @include position($position: relative, $zIndex: 5)
+        height: 100%
+    &__text
+        @include position($position: relative, $zIndex: 10)
+        max-width: 420px
+        margin-left: auto
+        padding: 40px 40px 10px 20px
+        p
+            span
+                background-image: linear-gradient(to bottom, #D0A971, #A5773D)
+                background-clip: text
+                color: transparent
+                @include fonts($fontSize: 20px, $lineHeight: 1.6)
+                font-weight: 700
+                text-align: right
+                display: block
+    &__img
+        @include position($position: absolute, $zIndex: 9)
+        left: 0
+        top: 100px
+        right: 25%
+        width: auto
+        @include height-elem($property: "height", $topOffset: 100)
+        object-fit: cover
+        img
+            object-fit: cover
+
+#huaweiBand9 .huaweiband9-slider
+    &__inner
+        padding: 70px 0 100px
+        max-width: 860px
+        margin: 0 auto
+    &__title
+        max-width: 690px
+        padding: 0 20px
+        margin-bottom: 50px
+    &__carousel
+        @include flex-box($justifyContent: center, $alignItems: flex-start)
+    &__items
+        min-width: 0
+        flex: 0 1 50%
+        display: flex
+        align-items: center
+        &:first-child
+            margin-right: 25px
+
+#huaweiBand9 .left-huaweiband9-slider
+    &__image
+        overflow: hidden
+        @include flex-box($justifyContent: center, $alignItems: center)
+        img
+            border-radius: 15px
+            width: 100%
+            height: 100%
+        &_01
+            background-color: #f8f8f8
+            border-radius: 15px
+            padding: 30px 50px
+
+#huaweiBand9 .right-huaweiband9-slider
+    &__image
+        padding-bottom: 20%
+    &__text
+        padding: 0 20px
+        p
+            text-align: right
+            color: #1E2022
+
+#huaweiBand9 .right-huaweiband9-slider-pagination
+    bottom: auto
+    bottom: 12%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+#huaweiBand9 .right-huaweiband9-slider-pagination .swiper-pagination-bullet
+    background: none
+    margin: 0 20px 0 0
+    @include position($position: relative, $zIndex: 6)
+    &::after
+        content: ""
+        @include position($position: absolute, $zIndex: 7)
+        top: 0
+        left: 0
+        width: 18px
+        height: 18px
+
+#huaweiBand9 .right-huaweiband9-slider-pagination .swiper-pagination-bullet
+    &:nth-child(1)
+        &::after
+            @include bg-image($url: url("../img/dot1.svg"))
+    &:nth-child(2)
+        &::after
+            @include bg-image($url: url("../img/dot2.svg"))
+    &:nth-child(3)
+        &::after
+            @include bg-image($url: url("../img/dot3.svg"))
+    &:nth-child(4)
+        &::after
+            @include bg-image($url: url("../img/dot4.svg"))
+    &:nth-child(5)
+        &::after
+            @include bg-image($url: url("../img/dot5.svg"))
+
+#huaweiBand9 .right-huaweiband9-slider-pagination .swiper-pagination-bullet-active
+    &::after
+        content: ""
+        @include position($position: absolute, $zIndex: 7)
+        top: 0
+        left: 0
+        width: 18px
+        height: 18px
+        overflow: hidden
+
+#huaweiBand9 .huaweiband9Light-banner
+    &__bg
+        @include bg-image($url: url("../img/img06.png"))
+        height: 670px
+    &__inner
+        @include position($position: relative, $zIndex: 6)
+        max-width: 900px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        height: 100%
+    &__text
+        padding: 10px 20px
+        max-width: 350px
+        @include position($position: relative, $zIndex: 99)
+        &_left
+            flex: 0 1 60%
+        &_right
+            flex: 0 1 40%
+            align-content: flex-end
+            margin-left: auto
+        p
+            span
+                @include fonts($fontSize: 46px, $lineHeight: 1.25)
+                font-weight: 500
+                background-image: linear-gradient(to bottom, #FFD548, #FFBA00)
+                background-clip: text
+                color: transparent
+
+#huaweiBand9 .huaweiband9-strap
+    &__inner
+        padding: 150px 0 100px
+    &__title
+        margin-bottom: 40px
+        padding: 0 20px
+    &__row
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 15px
+    &__item
+        @include position($position: relative, $zIndex: 6)
+        &:nth-child(n+1)
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+    &__text
+        padding: 10px 5px
+        &_bott
+            @include position($position: absolute, $zIndex: 7)
+            left: 20px
+            right: 20px
+            top: 10px
+
+#huaweiBand9 .huaweiband9-display
+    &__inner
+        margin-bottom: 150px
+    &__text
+        margin-bottom: 30px
+        padding: 0 20px
+        h2, p
+            text-align: center
+    &__image
+        img
+            margin: 0 auto
+
+#huaweiBand9 .huaweiband9Sensor-banner
+    &__bg
+        @include bg-image($url: url("../img/bg09.jpg"))
+        border-radius: 15px
+        margin-bottom: 150px
+    &__inner
+        @include flex-box($justifyContent: space-between, $alignItems: center)
+        @include position($position: relative, $zIndex: 7)
+        padding: 30px 50px
+    &__item
+        flex: 0 1 50%
+        padding: 10px 20px
+    &__text
+        margin-bottom: 20px
+        h3
+            margin-top: 0
+        h3, p
+            color: #fff
+    &__image
+        flex: 0 1 50%
+        @include position($position: absolute, $zIndex: 6)
+        top: 20px
+        left: 60%
+        right: 30px
+        img
+            margin: 0 auto
+
+#huaweiBand9 .huaweiband9-trueSleep
+    &__text
+        margin-bottom: 30px
+        padding: 0 10px
+        h4
+            color: #c68dff
+
+#huaweiBand9 .huaweiband9-row
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        gap: 20px
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+    &__image
+        flex: 0 1 50%
+
+#huaweiBand9 .huaweiband9-sleepingMode
+    &__bg
+        background-color: #010101
+        margin-top: -1px
+        padding-bottom: 50px
+    &__subtitle
+        margin-bottom: 100px
+        padding: 0 20px
+        p
+            color: #fff
+    &__inner
+        align-items: stretch
+        padding: 0 20px 80px
+    &__image
+        flex: 0 1 65%
+    &__item
+        flex: 0 1 35%
+        background-color: #2a2a2a
+        border-radius: 15px
+        margin-top: 20px
+        display: flex
+        align-items: center
+        &_02
+            margin-top: 12px
+    &__text
+        h4
+            color: #c68dff
+        p
+            color: #fff
+
+#huaweiBand9 .huaweiband9-trueSeen
+    &__inner
+        margin: 100px 0
+    &__text
+        margin-bottom: 30px
+        max-width: 625px
+        padding: 0 20px
+    &__image
+        img
+            margin: 0 auto
+
+#huaweiBand9 .huaweiband9-healthyMode
+    &__inner
+        padding: 40px 70px
+        border-radius: 15px
+        margin-bottom: 20px
+        &:nth-child(1)
+            background-color: #f7f7f7
+        &:nth-child(2)
+            background-color: #f0f9ff
+    &__image
+        img
+            margin: 0 auto
+    &__text
+        p
+            color: #787779
+    &__icons
+        display: flex
+        gap: 10px
+        margin: 25px 0
+    &__icon
+        flex: 0 1 20%
+
+#huaweiBand9 .col-huaweiBand9
+    max-width: 860px
+    margin: 0 auto
+    &__row
+        display: grid
+        grid-template-columns: 1.48fr 1fr 1fr
+        grid-auto-flow: dense
+        gap: 15px
+    &__item
+        height: 100%
+        border-radius: 15px
+        overflow: hidden
+        @include position($position: relative, $zIndex: 5)
+        &:nth-child(1)
+            grid-row: span 2
+        &:nth-child(2)
+            grid-column: span 2
+        &:nth-child(3)
+            grid-column: span 2
+    &__body
+        &_01
+            flex-direction: column
+    &__text
+        padding: 10px 20px
+        flex: 0 1 50%
+    &__image
+        flex: 0 1 50%
+        padding: 0 10px
+        img
+            margin: 0 auto
+
+#huaweiBand9 .huaweiband9-healthCol
+    &__row
+        margin-bottom: 100px
+        grid-template-rows: repeat(2, 196px)
+    &__item
+        cursor: pointer
+        &:nth-child(1)
+            @include flex-box($justifyContent: space-around, $alignItems: center)
+            background-color: #fff7f7
+        &:nth-child(2)
+            background-color: #f2fcfc
+        &:nth-child(3)
+            background-color: #fdfaef
+    &__body
+        &_01
+            @include position($position: absolute, $zIndex: 6)
+            opacity: 1
+            transition: opacity 0.3s
+            &:hover
+                opacity: 0
+        &_02, &_03
+            height: 100%
+            display: flex
+            align-items: center
+    &__text
+        &_01
+            margin-bottom: 30px
+        h4
+            margin-bottom: 0
+    &__image
+        &_02
+            @include position($position: relative, $zIndex: 5)
+            top: 28%
+        &_03
+            align-self: flex-end
+
+#huaweiBand9 .huaweiband9-overlay
+    @include position($position: absolute, $zIndex: 99)
+    @include flex-box($justifyContent: center, $alignItems: center)
+    flex-direction: column
+    height: 100%
+    top: 0
+    left: 0
+    padding: 10px 20px
+    opacity: 0
+    visibility: hidden
+    backdrop-filter: blur(10px)
+    transition: all 0.3s ease
+    p
+        color: #000
+        text-align: center
+    &_bg01
+        background-color: rgba(227, 217, 217, 0.8)
+    &_bg02
+        background-color: rgba(205, 222, 222, 0.8)
+    &_bg03
+        background-color: rgba(232, 229, 217, 0.8)
+    &_bg04
+        background-color: rgba(245, 233, 207, 0.8)
+
+#huaweiBand9 .huaweiband9-healthCol__item:hover .huaweiband9-overlay
+    opacity: 1
+    visibility: visible
+
+#huaweiBand9 .huaweiband9-workout
+    &__inner
+        margin-bottom: 100px
+    &__text
+        padding: 0 10px
+        margin-bottom: 30px
+        h4
+            color: #8bccf7
+
+#huaweiBand9 .huaweiband9-custom
+    &__row
+        margin-bottom: 100px
+    &__item
+        display: flex
+        align-items: center
+        &:nth-child(1)
+            background-color: #fffbf2
+        &:nth-child(2)
+            background-color: #f2fafc
+        &:nth-child(3)
+            background-color: #fff6ef
+    &__image
+        align-self: flex-end
+
+#huaweiBand9 .huaweiband9-waterproof
+    &__content
+        margin-bottom: 30px
+        display: flex
+    &__title
+        flex: 0 1 50%
+        padding: 10px
+    &__text
+        flex: 0 1 50%
+        padding: 10px
+    &__image
+        background-color: #eaf8fd
+        border-radius: 15px
+
+#huaweiBand9 .huaweiband9-sport
+    &__row
+        margin: 20px 0 100px
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr
+    &__item
+        flex-direction: column
+        cursor: pointer
+        &:nth-child(1)
+            background-color: #fff7f7
+            grid-row: span 1
+        &:nth-child(2)
+            background-color: #fffbf2
+            grid-column: span 1
+    &__body
+        display: flex
+        flex-direction: column
+        align-items: center
+        opacity: 1
+        transition: opacity 0.3s
+        &:hover
+            opacity: 0
+    &__text
+        h4
+            text-align: center
+            &:first-child
+                margin-bottom: 10px
+        &_01
+            flex: 1 1 auto
+    &__image
+        &_01
+            align-self: flex-end
+            padding: 0
+            flex: 0 0 304px
+            display: flex
+            align-items: flex-end
+        &_02
+            padding-bottom: 20px
+    &__icons
+        display: flex
+        gap: 10px
+        padding: 0 10px
+        flex: 1 1 auto
+    &__icon
+        flex: 0 1 20%
+
+#huaweiBand9 .huaweiband9-sport__item:hover .huaweiband9-overlay
+    opacity: 1
+    visibility: visible
+
+#huaweiBand9 .huaweiband9-reminders
+    &__inner
+        margin-bottom: 100px
+    &__title
+        margin-bottom: 50px
+        padding: 0 10px
+        h4
+            color: #72c9ff
+            text-align: center
+        h2
+            text-align: center
+    &__image
+        margin-bottom: 30px
+        img
+            margin: 0 auto
+    &__text
+        max-width: 450px
+        margin: 0 auto
+        padding: 0 10px
+        p
+            text-align: center
+
+#huaweiBand9 .huaweiband9-icons
+    &__bg
+        background-color: #f8f9fb
+        border-radius: 15px
+    &__title
+        padding: 35px 10px
+        h3
+            text-align: center
+    &__items
+        padding: 0 30px 50px
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        gap: 10px
+        margin-bottom: 20px
+    &__item
+        img
+            margin: 0 auto
+        p
+            text-align: center
+
+#huaweiBand9 .huaweiband9-power
+    &__inner
+        margin-bottom: 20px
+    &__bg
+        background-color: #f8f9fb
+        border-radius: 15px
+    &__content
+        padding: 40px 0 15px
+        display: flex
+        align-items: center
+    &__title
+        flex: 0 1 50%
+        padding: 10px 25px
+        h3
+            margin: 10px 0
+    &__text
+        flex: 0 1 50%
+        padding: 10px 20px
+    &__image
+        margin-bottom: 30px
+    &__time
+        @include flex-box($justifyContent: center, $alignItems: center)
+        max-width: 400px
+        margin: 0 auto
+        padding-bottom: 30px
+    &__time-day
+        flex: 0 1 50%
+        border-right: 1px solid #959595
+        padding: 0 20px
+        &:first-child
+            p
+                text-align: right
+        &:last-child
+            border: none
+        p
+            span
+                font-size: 41px
+                color: #7ce0df
+
+#huaweiBand9 .huaweiband9-conditions
+    &__bg
+        background-color: #f8f9fb
+        border-radius: 15px
+    &__content
+        display: flex
+        margin-bottom: 30px
+    &__title
+        flex: 0 1 45%
+        padding: 30px 25px
+        h3
+            margin: 10px 0
+    &__text
+        flex: 0 1 55%
+        padding: 30px 20px
+    &__items
+        padding: 0 30px 50px
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 10px
+    &__item
+        img
+            margin: 0 auto 10px
+        p
+            text-align: center
+
+#huaweiBand9 .huaweiband9-compatible
+    &__bg
+        background-color: #f8f9fb
+        border-radius: 15px
+    &__inner
+        margin-bottom: 20px
+    &__image
+        padding: 20px 10px
+        img
+            margin: 0 auto
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (min-width: 1024px)
+    #huaweiBand9 .huaweiBand9
+        &__container
+            h4
+                font-size: 18px
+            p
+                @include adaptive-size($property: "font-size", $minSize: 12, $maxSize: 16, $maxWidth: 1520)
+
+    #huaweiBand9 .column-huaweiBand9
+        padding: 0 10px
+        &__row
+            gap: 10px
+
+    #huaweiBand9 .huaweiband9-mainCol
+        &__item
+            &:nth-child(5)
+                grid-column: span 2
+            &:nth-child(6)
+                grid-column: span 2
+            &:nth-child(7)
+                grid-column: span 3
+                background-color: #f2f4fd
+                background-position: 100%
+        &__text
+            left: 15px
+            right: 15px
+            &_01
+                p
+                    max-width: 120px
+                    &:nth-of-type(1)
+                        margin-bottom: 36px
+                img
+                    &:nth-of-type(1)
+                        margin-bottom: 36px
+            &_02, &_03
+                top: 50%
+                transform: translateY(-50%)
+                right: 55%
+            &_05
+                right: 15%
+            &_07
+                top: 50%
+                transform: translateY(-50%)
+                right: 60%
+        &__text-item
+            p
+                span
+                    font-size: 35px
+    #huaweiBand9 .huaweiband9Bezel-banner
+        &__text
+            padding: 30px 35px 10px 20px
+            p
+                span
+                    @include adaptive-size($property: "font-size", $minSize: 18, $maxSize: 20, $maxWidth: 1520)
+    #huaweiBand9 .huaweiband9Light-banner
+        &__text
+            &_left
+                @include adaptive-size($property: "width", $minSize: 200, $maxSize: 350, $maxWidth: 1520)
+                max-width: 100%
+            &_right
+                p
+                    span
+                        @include adaptive-size($property: "font-size", $minSize: 36, $maxSize: 46, $maxWidth: 1520)
+
+@media screen and (min-width: 1024px) and (max-width: 1200px)
+    #huaweiBand9 .huaweiband9-sleepingMode
+        &__inner
+            flex-direction: column
+
+@media screen and (max-width: 1023.98px)
+    #huaweiBand9 .huaweiBand9
+        &__container
+            h2
+                @include adaptive-size($property: "font-size", $minSize: 22, $maxSize: 50, $maxWidth: 1024)
+            h3
+                @include adaptive-size($property: "font-size", $minSize: 20, $maxSize: 30, $maxWidth: 1024)
+    #huaweiBand9 .huaweiband9Bezel-banner
+        &__bg
+            @include adaptive-size($property: "height", $minSize: 344, $maxSize: 688, $maxWidth: 1023)
+        &__text
+            @include adaptive-size($property: "padding-top", $minSize: 0, $maxSize: 40, $maxWidth: 1023)
+            @include adaptive-size($property: "padding-right", $minSize: 10, $maxSize: 40, $maxWidth: 1023)
+    #huaweiBand9 .huaweiband9Light-banner
+        &__text
+            p
+                span
+                    @include adaptive-size($property: "font-size", $minSize: 20, $maxSize: 46, $maxWidth: 1024)
+    #huaweiBand9 .huaweiband9-display
+        &__inner
+            margin-bottom: 100px
+    #huaweiBand9 .huaweiband9Sensor-banner
+        &__bg
+            margin-bottom: 100px
+
+@media screen and (max-width: 991.98px)
+    #huaweiBand9 .huaweiband9-top
+        &__inner
+            margin-bottom: 50px
+    #huaweiBand9 .huaweiband9-mainCol
+        &__row
+            margin-bottom: 70px
+        &__item
+            &:nth-child(5)
+                grid-column: span 2
+            &:nth-child(6)
+                grid-column: 1/-1
+            &:nth-child(7)
+                grid-column: span 2
+        &__text
+            &_06
+                left: 50%
+                transform: translateX(-50%)
+                margin-right: -50%
+                right: auto
+        &__text-item
+            p
+                span
+                    font-size: 45px
+    #huaweiBand9 .huaweiband9Bezel-banner
+        &__text
+            @include adaptive-size($property: "padding-top", $minSize: 0, $maxSize: 30, $maxWidth: 991)
+    #huaweiBand9 .huaweiband9-slider
+        &__inner
+            padding: 20px 0 30px
+        &__title
+            margin-bottom: 25px
+    #huaweiBand9 .right-huaweiband9-slider-pagination
+        bottom: 50px
+    #huaweiBand9 .right-huaweiband9-slider
+        &__image
+            padding-bottom: 60px
+    #huaweiBand9 .huaweiband9-strap
+        &__inner
+            padding: 50px 0
+    #huaweiBand9 .huaweiband9-display
+        &__inner
+            margin-bottom: 50px
+    #huaweiBand9 .huaweiband9-sleepingMode
+        &__bg
+            padding-bottom: 0
+        &__subtitle
+            margin-bottom: 50px
+        &__inner
+            padding-bottom: 40px
+    #huaweiBand9 .huaweiband9-trueSeen
+        &__inner
+            margin: 50px 0
+    #huaweiBand9 .huaweiband9-healthCol
+        &__row
+            margin-bottom: 50px
+    #huaweiBand9 .huaweiband9-workout
+        &__inner
+            margin-bottom: 50px
+    #huaweiBand9 .huaweiband9-custom
+        &__row
+            margin-bottom: 50px
+    #huaweiBand9 .huaweiband9-sport
+        &__row
+            margin: 20px 0 50px
+    #huaweiBand9 .huaweiband9-reminders
+        &__inner
+            margin-bottom: 50px
+
+@media screen and (max-width: 830.98px)
+    #huaweiBand9 .huaweiband9-mainCol
+        &__item
+            &:nth-child(1)
+                background-position: 29% 0
+            &:nth-child(3)
+                background-position: 50% 0
+            &:nth-child(4)
+                background-position: 50% 0
+            &:nth-child(7)
+                background-position: 50% 0
+
+@media screen and (max-width: 767.98px)
+    #huaweiBand9 .huaweiBand9
+        &__container
+            h2, h3
+                margin: 10px 0
+            h4
+                @include adaptive-size($property: "font-size", $minSize: 18, $maxSize: 20, $maxWidth: 767)
+                margin-bottom: 10px
+    #huaweiBand9 .huaweiband9-top
+        &__inner
+            margin-bottom: 20px
+    #huaweiBand9 .huaweiband9-mainCol
+        &__row
+            margin-bottom: 20px
+        &__item
+            &:nth-child(1)
+                grid-column: span 3
+                background-color: #f8f8f8
+                background-position: 100%
+            &:nth-child(2)
+                grid-column: span 3
+                background-color: #f9f5ff
+                background-position: 100%
+            &:nth-child(3)
+                grid-column: span 3
+                background-color: #fff9f7
+                background-position: 80%
+            &:nth-child(4)
+                background-color: #fff6f0
+                background-position: 50% 34px
+    #huaweiBand9 .huaweiband9Bezel-banner
+        &__img
+            right: 25%
+            top: 150px
+            @include height-elem($property: "height", $topOffset: 150)
+        &__text
+            p
+                span
+                    @include adaptive-size($property: "font-size", $minSize: 18, $maxSize: 20, $maxWidth: 767)
+    #huaweiBand9 .right-huaweiband9-slider-pagination
+        bottom: 55px
+    #huaweiBand9 .right-huaweiband9-slider
+        &__image
+            padding-bottom: 50px
+    #huaweiBand9 .huaweiband9Light-banner
+        &__bg
+            @include bg-image($url: url("../img/img06_mob.jpg"))
+            @include adaptive-size($property: "height", $minSize: 780, $maxSize: 1087, $maxWidth: 767)
+        &__inner
+            height: auto
+        &__text
+            &_left
+                max-width: 100%
+            &_right
+                margin: 0
+                align-content: start
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                column-gap: 15px
+                row-gap: 20px
+    #huaweiBand9 .huaweiband9-strap
+        &__inner
+            padding: 25px 0
+        &__title
+            margin-bottom: 0
+        &__text
+            &_bott
+                left: 50%
+                transform: translateX(-50%)
+                margin-right: -50%
+                right: auto
+                padding: 10px
+                p
+                    text-align: center
+    #huaweiBand9 .huaweiband9-display
+        &__inner
+            margin-bottom: 25px
+    #huaweiBand9 .huaweiband9Sensor-banner
+        &__inner
+            padding: 30px 10px
+    #huaweiBand9 .huaweiband9-trueSleep
+        &__text
+            margin-bottom: 0
+    #huaweiBand9 .huaweiband9-sleepingMode
+        &__subtitle
+            margin-bottom: 25px
+        &__inner
+            flex-direction: column
+            padding: 0 10px 10px
+        &__item
+            margin-top: 0
+        &__image
+            &_03
+                img
+                    margin: 0 auto
+    #huaweiBand9 .huaweiband9-trueSeen
+        &__inner
+            margin: 15px 0
+        &__text
+            margin-bottom: 15px
+    #huaweiBand9 .huaweiband9-healthyMode
+        &__inner
+            padding: 20px 10px
+            gap: 5px
+        &__icons
+            gap: 5px
+    #huaweiBand9 .huaweiband9-healthCol
+        &__row
+            margin-bottom: 20px
+    #huaweiBand9 .huaweiband9-workout
+        &__inner
+            margin-bottom: 20px
+        &__text
+            margin-bottom: 0
+    #huaweiBand9 .huaweiband9-custom
+        &__row
+            margin-bottom: 20px
+    #huaweiBand9 .huaweiband9-waterproof
+        &__content
+            margin-bottom: 0
+    #huaweiBand9 .huaweiband9-sport
+        &__row
+            margin: 10px 0 20px
+    #huaweiBand9 .huaweiband9-reminders
+        &__inner
+            margin-bottom: 20px
+        &__title
+            margin-bottom: 25px
+        &__image
+            margin-bottom: 15px
+    #huaweiBand9 .huaweiband9-icons
+        &__title
+            padding: 15px 10px
+        &__items
+            padding: 0 15px 15px
+    #huaweiBand9 .huaweiband9-power
+        &__content
+            padding: 10px 0
+        &__image
+            margin-bottom: 15px
+        &__time-day
+            padding: 0 15px
+            p
+                span
+                    @include adaptive-size($property: "font-size", $minSize: 18, $maxSize: 38, $maxWidth: 767)
+    #huaweiBand9 .huaweiband9-conditions
+        &__content
+            margin-bottom: 0
+        &__title
+            padding: 15px 20px
+        &__text
+            padding: 15px 10px
+        &__items
+            padding: 0 15px 25px
+
+@media screen and (max-width: 640.98px)
+    #huaweiBand9 .huaweiband9-mainCol
+        &__item
+            &:nth-child(7)
+                background-position: 80% 0
+        &__text
+            &_07
+                top: 20px
+                right: 20px
+                transform: translateY(0)
+    #huaweiBand9 .huaweiband9-slider
+        &__inner
+            padding: 10px 0 15px
+        &__title
+            margin-bottom: 15px
+        &__carousel
+            display: block
+        &__items
+            &:first-child
+                margin-bottom: 20px
+                margin-right: 0
+    #huaweiBand9 .right-huaweiband9-slider-pagination
+        justify-content: center
+    #huaweiBand9 .right-huaweiband9-slider
+        &__text
+            p
+                text-align: center
+    #huaweiBand9 .huaweiband9Light-banner
+        &__text
+            &_left
+                max-width: 70%
+    #huaweiBand9 .huaweiband9-strap
+        &__text
+            &_bott
+                top: 0
+    #huaweiBand9 .huaweiband9Sensor-banner
+        &__inner
+            padding: 20px 15px
+        &__image
+            right: 10px
+    #huaweiBand9 .huaweiband9-custom
+        &__row
+            grid-template-columns: repeat(2, 1fr)
+            column-gap: 5px
+            row-gap: 20px
+        &__item
+            &:nth-child(1)
+                grid-column: span 2
+                grid-row: span 1
+        &__body
+            display: flex
+            flex-direction: row
+            align-items: center
+            // position: unset
+    #huaweiBand9 .huaweiband9-waterproof
+        &__content
+            flex-direction: column
+        &__title
+            padding: 0 10px
+    #huaweiBand9 .huaweiband9-sport
+        &__row
+            grid-template-columns: 1fr
+    #huaweiBand9 .huaweiband9-icons
+        &__title
+            padding: 5px 10px
+        &__items
+            grid-template-columns: repeat(3, 1fr)
+        &__item
+            p
+                font-size: 14px
+
+@media screen and (max-width: 540.98px)
+    #huaweiBand9 .huaweiband9-mainCol
+        &__row
+            grid-template-columns: repeat(2, 1fr)
+        &__item
+            &:nth-child(1)
+                grid-column: span 2
+            &:nth-child(2)
+                grid-column: span 2
+                background-position: 20%
+            &:nth-child(3)
+                grid-column: span 2
+                background-position: 40%
+            &:nth-child(4)
+                grid-column: span 2
+    #huaweiBand9 .huaweiband9Light-banner
+        &__text
+            &_right
+                grid-template-columns: 1fr
+                max-width: 40%
+    #huaweiBand9 .huaweiband9-strap
+        &__inner
+            padding: 10px 0
+        &__title
+            h2
+                text-align: center
+        &__row
+            display: grid
+            grid-template-columns: 1fr
+        &__item
+            &:nth-child(3)
+                grid-row: 2
+        &__text
+            &_top
+                padding: 0 5px
+    #huaweiBand9 .huaweiband9Sensor-banner
+        &__bg
+            margin-bottom: 20px
+    #huaweiBand9 .huaweiband9-healthCol
+        &__row
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(3, 180px)
+            column-gap: 5px
+            row-gap: 20px
+        &__item
+            &:nth-child(1)
+                grid-column: span 2
+                grid-row: span 1
+        &__body
+            display: flex
+            flex-direction: row
+            align-items: center
+    #huaweiBand9 .huaweiband9-power
+        &__content
+            flex-direction: column
+        &__title
+            padding: 0 10px
+            h3
+                text-align: center
+        &__text
+            padding: 0 10px
+            p
+                text-align: center
+        &__time
+            padding-bottom: 15px
+    #huaweiBand9 .huaweiband9-conditions
+        &__content
+            flex-direction: column
+        &__title
+            padding: 0 10px
+            h3
+                text-align: center
+        &__text
+            padding: 0 10px
+            p
+                text-align: center
+        &__items
+            grid-template-columns: repeat(3, 1fr)
+            gap: 5px
+            padding: 0 10px 10px
+        &__item
+            p
+                font-size: 14px
+    #huaweiBand9 .huaweiband9-compatible
+        &__inner
+            flex-direction: column-reverse
+            gap: 0
+        &__text
+            padding: 0 15px
+
+@media screen and (max-width: 479.98px)
+    #huaweiBand9 .column-huaweiBand9
+        padding: 0 5px
+    #huaweiBand9 .huaweiband9-mainCol
+        &__row
+            margin-bottom: 10px
+        &__text
+            &_06
+                padding: 0 20px
+        &__text-item
+            p
+                span
+                    @include adaptive-size($property: "font-size", $minSize: 26, $maxSize: 42, $maxWidth: 479)
+    #huaweiBand9 .huaweiband9Bezel-banner
+        &__text
+            max-width: 100%
+            margin: 0 auto
+            padding: 10px 15px
+        &__img
+            right: 40%
+            top: 220px
+            @include height-elem($property: "height", $topOffset: 220)
+    #huaweiBand9 .huaweiband9-slider
+        &__title
+            padding: 0 15px
+        &__items:first-child
+            margin-bottom: 10px
+        &__text
+            padding: 0 10px
+    #huaweiBand9 .right-huaweiband9-slider-pagination
+        bottom: 60px
+    #huaweiBand9 .huaweiband9Light-banner
+        &__bg
+            background-position: 17% 50%
+        &__text
+            padding: 10px
+    #huaweiBand9 .huaweiband9-display
+        &__text
+            margin-bottom: 15px
+            padding: 0 10px
+    #huaweiBand9 .huaweiband9-display
+        &__inner
+            margin-bottom: 10px
+    #huaweiBand9 .huaweiband9Sensor-banner
+        &__inner
+            flex-direction: column
+            align-items: stretch
+            padding: 10px 0
+        &__item
+            padding: 0 15px
+        &__img
+            @include position($position: absolute, $zIndex: 7)
+            bottom: 20px
+            @include adaptive-size($property: "left", $minSize: 40, $maxSize: 120, $maxWidth: 479)
+            right: 50%
+        &__text
+            margin-bottom: 0
+        &__image
+            position: unset
+            align-content: flex-end
+            margin-bottom: 10px
+            img
+                @include adaptive-size($property: "margin-left", $minSize: 100, $maxSize: 200, $maxWidth: 479)
+                margin-right: 20px
+    #huaweiBand9 .huaweiband9-trueSeen
+        &__text
+            padding: 0 10px
+    #huaweiBand9 .huaweiband9-healthyMode
+        &__inner
+            flex-direction: column-reverse
+            padding: 10px 0
+        &__text
+            padding: 0 20px
+        &__icons
+            margin: 10px 0
+    #huaweiBand9 .huaweiband9-icons
+        &__icons
+            padding: 0 10px 15px
+            gap: 5px
+        &__item
+            p
+                font-size: 12px
+    #huaweiBand9 .huaweiband9-conditions
+        &__item
+            p
+                font-size: 12px
+
+@media screen and (max-width: 379.98px)
+    #huaweiBand9 .huaweiband9-mainCol
+        &__item
+            &:nth-child(1)
+                background-position: -17%
+    #huaweiBand9 .huaweiband9-sport
+        &__image
+            &_01
+                flex: 0 0 250px
