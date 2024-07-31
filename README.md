@@ -34,3 +34,4 @@ View the optimal layout for the interface depending on their device's screen siz
 - Flexbox
 - CSS Grid
 - Swiper.js
+- Responsive web-design

@@ -72,7 +72,9 @@ li {
 }
 
 #huaweiBand9 .huaweiBand9__container {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 1006px;
   margin: 0 auto;
   padding: 0 15px;
@@ -137,8 +139,11 @@ li {
   position: relative;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  border-radius: 15px;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
 #huaweiBand9 .column-huaweiBand9__image {
   position: absolute;
@@ -201,7 +206,10 @@ li {
 }
 #huaweiBand9 .huaweiband9-mainCol__text_02, #huaweiBand9 .huaweiband9-mainCol__text_03 {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 55%;
 }
 #huaweiBand9 .huaweiband9-mainCol__text_05 {
@@ -209,16 +217,26 @@ li {
 }
 #huaweiBand9 .huaweiband9-mainCol__text_07 {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 60%;
 }
 #huaweiBand9 .huaweiband9-mainCol__image {
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 15px;
   right: auto;
 }
 #huaweiBand9 .huaweiband9-mainCol__text-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
@@ -228,6 +246,8 @@ li {
 #huaweiBand9 .huaweiband9-mainCol__text-item p span {
   font-size: 24px;
   font-weight: 700;
+  background-image: -webkit-linear-gradient(315deg, #96f8da, #65cba7);
+  background-image: -o-linear-gradient(315deg, #96f8da, #65cba7);
   background-image: linear-gradient(135deg, #96f8da, #65cba7);
   -webkit-background-clip: text;
           background-clip: text;
@@ -247,7 +267,9 @@ li {
   background-image: url("../img/bg04.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   height: 688px;
   overflow: hidden;
 }
@@ -264,6 +286,9 @@ li {
   padding: 40px 40px 10px 20px;
 }
 #huaweiBand9 .huaweiband9Bezel-banner__text p span {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#D0A971), to(#A5773D));
+  background-image: -webkit-linear-gradient(top, #D0A971, #A5773D);
+  background-image: -o-linear-gradient(top, #D0A971, #A5773D);
   background-image: linear-gradient(to bottom, #D0A971, #A5773D);
   -webkit-background-clip: text;
           background-clip: text;
@@ -281,6 +306,7 @@ li {
   top: 100px;
   right: 25%;
   width: auto;
+  height: -webkit-calc(100% - 100px);
   height: calc(100% - 100px);
   -o-object-fit: cover;
      object-fit: cover;
@@ -301,15 +327,39 @@ li {
   margin-bottom: 50px;
 }
 #huaweiBand9 .huaweiband9-slider__carousel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 #huaweiBand9 .huaweiband9-slider__items {
   min-width: 0;
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #huaweiBand9 .huaweiband9-slider__items:first-child {
   margin-right: 25px;
@@ -317,18 +367,32 @@ li {
 
 #huaweiBand9 .left-huaweiband9-slider__image {
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #huaweiBand9 .left-huaweiband9-slider__image img {
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
   width: 100%;
   height: 100%;
 }
 #huaweiBand9 .left-huaweiband9-slider__image_01 {
   background-color: #f8f8f8;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
   padding: 30px 50px;
 }
 
@@ -346,9 +410,21 @@ li {
 #huaweiBand9 .right-huaweiband9-slider-pagination {
   bottom: auto;
   bottom: 12%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #huaweiBand9 .right-huaweiband9-slider-pagination .swiper-pagination-bullet {
@@ -371,31 +447,41 @@ li {
   background-image: url("../img/dot1.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 #huaweiBand9 .right-huaweiband9-slider-pagination .swiper-pagination-bullet:nth-child(2)::after {
   background-image: url("../img/dot2.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 #huaweiBand9 .right-huaweiband9-slider-pagination .swiper-pagination-bullet:nth-child(3)::after {
   background-image: url("../img/dot3.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 #huaweiBand9 .right-huaweiband9-slider-pagination .swiper-pagination-bullet:nth-child(4)::after {
   background-image: url("../img/dot4.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 #huaweiBand9 .right-huaweiband9-slider-pagination .swiper-pagination-bullet:nth-child(5)::after {
   background-image: url("../img/dot5.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 
 #huaweiBand9 .right-huaweiband9-slider-pagination .swiper-pagination-bullet-active::after {
@@ -413,7 +499,9 @@ li {
   background-image: url("../img/img06.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   height: 670px;
 }
 #huaweiBand9 .huaweiband9Light-banner__inner {
@@ -421,8 +509,18 @@ li {
   z-index: 6;
   max-width: 900px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
 }
 #huaweiBand9 .huaweiband9Light-banner__text {
@@ -432,17 +530,30 @@ li {
   z-index: 99;
 }
 #huaweiBand9 .huaweiband9Light-banner__text_left {
-  flex: 0 1 60%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 60%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
 }
 #huaweiBand9 .huaweiband9Light-banner__text_right {
-  flex: 0 1 40%;
-  align-content: flex-end;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 40%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  -webkit-align-content: flex-end;
+      -ms-flex-line-pack: end;
+          align-content: flex-end;
   margin-left: auto;
 }
 #huaweiBand9 .huaweiband9Light-banner__text p span {
   font-size: 46px;
   line-height: 1.25;
   font-weight: 500;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFD548), to(#FFBA00));
+  background-image: -webkit-linear-gradient(top, #FFD548, #FFBA00);
+  background-image: -o-linear-gradient(top, #FFD548, #FFBA00);
   background-image: linear-gradient(to bottom, #FFD548, #FFBA00);
   -webkit-background-clip: text;
           background-clip: text;
@@ -466,9 +577,23 @@ li {
   z-index: 6;
 }
 #huaweiBand9 .huaweiband9-strap__item:nth-child(n+1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 #huaweiBand9 .huaweiband9-strap__text {
   padding: 10px 5px;
@@ -499,20 +624,39 @@ li {
   background-image: url("../img/bg09.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
-  border-radius: 15px;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
   margin-bottom: 150px;
 }
 #huaweiBand9 .huaweiband9Sensor-banner__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   z-index: 7;
   padding: 30px 50px;
 }
 #huaweiBand9 .huaweiband9Sensor-banner__item {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   padding: 10px 20px;
 }
 #huaweiBand9 .huaweiband9Sensor-banner__text {
@@ -525,7 +669,11 @@ li {
   color: #fff;
 }
 #huaweiBand9 .huaweiband9Sensor-banner__image {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   position: absolute;
   z-index: 6;
   top: 20px;
@@ -545,22 +693,48 @@ li {
 }
 
 #huaweiBand9 .huaweiband9-row__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 #huaweiBand9 .huaweiband9-row__inner_rev {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 #huaweiBand9 .huaweiband9-row__item {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
 }
 #huaweiBand9 .huaweiband9-row__text {
   padding: 10px 20px;
 }
 #huaweiBand9 .huaweiband9-row__image {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
 }
 
 #huaweiBand9 .huaweiband9-sleepingMode__bg {
@@ -576,19 +750,40 @@ li {
   color: #fff;
 }
 #huaweiBand9 .huaweiband9-sleepingMode__inner {
-  align-items: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+     -moz-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   padding: 0 20px 80px;
 }
 #huaweiBand9 .huaweiband9-sleepingMode__image {
-  flex: 0 1 65%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 65%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%;
 }
 #huaweiBand9 .huaweiband9-sleepingMode__item {
-  flex: 0 1 35%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 35%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
   background-color: #2a2a2a;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #huaweiBand9 .huaweiband9-sleepingMode__item_02 {
   margin-top: 12px;
@@ -614,7 +809,8 @@ li {
 
 #huaweiBand9 .huaweiband9-healthyMode__inner {
   padding: 40px 70px;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
   margin-bottom: 20px;
 }
 #huaweiBand9 .huaweiband9-healthyMode__inner:nth-child(1) {
@@ -630,12 +826,20 @@ li {
   color: #787779;
 }
 #huaweiBand9 .huaweiband9-healthyMode__icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   margin: 25px 0;
 }
 #huaweiBand9 .huaweiband9-healthyMode__icon {
-  flex: 0 1 20%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 20%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
 }
 
 #huaweiBand9 .col-huaweiBand9 {
@@ -650,7 +854,8 @@ li {
 }
 #huaweiBand9 .col-huaweiBand9__item {
   height: 100%;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
   overflow: hidden;
   position: relative;
   z-index: 5;
@@ -665,14 +870,28 @@ li {
   grid-column: span 2;
 }
 #huaweiBand9 .col-huaweiBand9__body_01 {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 #huaweiBand9 .col-huaweiBand9__text {
   padding: 10px 20px;
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
 }
 #huaweiBand9 .col-huaweiBand9__image {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   padding: 0 10px;
 }
 #huaweiBand9 .col-huaweiBand9__image img {
@@ -687,9 +906,19 @@ li {
   cursor: pointer;
 }
 #huaweiBand9 .huaweiband9-healthCol__item:nth-child(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff7f7;
 }
 #huaweiBand9 .huaweiband9-healthCol__item:nth-child(2) {
@@ -702,6 +931,8 @@ li {
   position: absolute;
   z-index: 6;
   opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 #huaweiBand9 .huaweiband9-healthCol__body_01:hover {
@@ -709,8 +940,16 @@ li {
 }
 #huaweiBand9 .huaweiband9-healthCol__body_02, #huaweiBand9 .huaweiband9-healthCol__body_03 {
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #huaweiBand9 .huaweiband9-healthCol__text_01 {
   margin-bottom: 30px;
@@ -724,16 +963,36 @@ li {
   top: 28%;
 }
 #huaweiBand9 .huaweiband9-healthCol__image_03 {
-  align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
 }
 
 #huaweiBand9 .huaweiband9-overlay {
   position: absolute;
   z-index: 99;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   top: 0;
   left: 0;
@@ -742,6 +1001,8 @@ li {
   visibility: hidden;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 #huaweiBand9 .huaweiband9-overlay p {
@@ -781,8 +1042,16 @@ li {
   margin-bottom: 100px;
 }
 #huaweiBand9 .huaweiband9-custom__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #huaweiBand9 .huaweiband9-custom__item:nth-child(1) {
   background-color: #fffbf2;
@@ -794,24 +1063,39 @@ li {
   background-color: #fff6ef;
 }
 #huaweiBand9 .huaweiband9-custom__image {
-  align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
 }
 
 #huaweiBand9 .huaweiband9-waterproof__content {
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #huaweiBand9 .huaweiband9-waterproof__title {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   padding: 10px;
 }
 #huaweiBand9 .huaweiband9-waterproof__text {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   padding: 10px;
 }
 #huaweiBand9 .huaweiband9-waterproof__image {
   background-color: #eaf8fd;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
 
 #huaweiBand9 .huaweiband9-sport__row {
@@ -820,7 +1104,13 @@ li {
   grid-template-rows: 1fr;
 }
 #huaweiBand9 .huaweiband9-sport__item {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   cursor: pointer;
 }
 #huaweiBand9 .huaweiband9-sport__item:nth-child(1) {
@@ -832,10 +1122,26 @@ li {
   grid-column: span 1;
 }
 #huaweiBand9 .huaweiband9-sport__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 #huaweiBand9 .huaweiband9-sport__body:hover {
@@ -848,26 +1154,56 @@ li {
   margin-bottom: 10px;
 }
 #huaweiBand9 .huaweiband9-sport__text_01 {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 #huaweiBand9 .huaweiband9-sport__image_01 {
-  align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
   padding: 0;
-  flex: 0 0 304px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 304px;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 304px;
+          flex: 0 0 304px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 #huaweiBand9 .huaweiband9-sport__image_02 {
   padding-bottom: 20px;
 }
 #huaweiBand9 .huaweiband9-sport__icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   padding: 0 10px;
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 #huaweiBand9 .huaweiband9-sport__icon {
-  flex: 0 1 20%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 20%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
 }
 
 #huaweiBand9 .huaweiband9-sport__item:hover .huaweiband9-overlay {
@@ -906,7 +1242,8 @@ li {
 
 #huaweiBand9 .huaweiband9-icons__bg {
   background-color: #f8f9fb;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
 #huaweiBand9 .huaweiband9-icons__title {
   padding: 35px 10px;
@@ -933,37 +1270,70 @@ li {
 }
 #huaweiBand9 .huaweiband9-power__bg {
   background-color: #f8f9fb;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
 #huaweiBand9 .huaweiband9-power__content {
   padding: 40px 0 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #huaweiBand9 .huaweiband9-power__title {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   padding: 10px 25px;
 }
 #huaweiBand9 .huaweiband9-power__title h3 {
   margin: 10px 0;
 }
 #huaweiBand9 .huaweiband9-power__text {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   padding: 10px 20px;
 }
 #huaweiBand9 .huaweiband9-power__image {
   margin-bottom: 30px;
 }
 #huaweiBand9 .huaweiband9-power__time {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 400px;
   margin: 0 auto;
   padding-bottom: 30px;
 }
 #huaweiBand9 .huaweiband9-power__time-day {
-  flex: 0 1 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   border-right: 1px solid #959595;
   padding: 0 20px;
 }
@@ -980,21 +1350,34 @@ li {
 
 #huaweiBand9 .huaweiband9-conditions__bg {
   background-color: #f8f9fb;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
 #huaweiBand9 .huaweiband9-conditions__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
 }
 #huaweiBand9 .huaweiband9-conditions__title {
-  flex: 0 1 45%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 45%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
   padding: 30px 25px;
 }
 #huaweiBand9 .huaweiband9-conditions__title h3 {
   margin: 10px 0;
 }
 #huaweiBand9 .huaweiband9-conditions__text {
-  flex: 0 1 55%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 55%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 55%;
+          flex: 0 1 55%;
   padding: 30px 20px;
 }
 #huaweiBand9 .huaweiband9-conditions__items {
@@ -1012,7 +1395,8 @@ li {
 
 #huaweiBand9 .huaweiband9-compatible__bg {
   background-color: #f8f9fb;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
 #huaweiBand9 .huaweiband9-compatible__inner {
   margin-bottom: 20px;
@@ -1029,6 +1413,7 @@ li {
     font-size: 18px;
   }
   #huaweiBand9 .huaweiBand9__container p {
+    font-size: -webkit-calc(12px + 4 * (100vw - 320px) / 1200);
     font-size: calc(12px + 4 * (100vw - 320px) / 1200);
   }
   #huaweiBand9 .column-huaweiBand9 {
@@ -1063,7 +1448,10 @@ li {
   }
   #huaweiBand9 .huaweiband9-mainCol__text_02, #huaweiBand9 .huaweiband9-mainCol__text_03 {
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: 55%;
   }
   #huaweiBand9 .huaweiband9-mainCol__text_05 {
@@ -1071,7 +1459,10 @@ li {
   }
   #huaweiBand9 .huaweiband9-mainCol__text_07 {
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: 60%;
   }
   #huaweiBand9 .huaweiband9-mainCol__text-item p span {
@@ -1081,36 +1472,51 @@ li {
     padding: 30px 35px 10px 20px;
   }
   #huaweiBand9 .huaweiband9Bezel-banner__text p span {
+    font-size: -webkit-calc(18px + 2 * (100vw - 320px) / 1200);
     font-size: calc(18px + 2 * (100vw - 320px) / 1200);
   }
   #huaweiBand9 .huaweiband9Light-banner__text_left {
+    width: -webkit-calc(200px + 150 * (100vw - 320px) / 1200);
     width: calc(200px + 150 * (100vw - 320px) / 1200);
     max-width: 100%;
   }
   #huaweiBand9 .huaweiband9Light-banner__text_right p span {
+    font-size: -webkit-calc(36px + 10 * (100vw - 320px) / 1200);
     font-size: calc(36px + 10 * (100vw - 320px) / 1200);
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   #huaweiBand9 .huaweiband9-sleepingMode__inner {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (max-width: 1023.98px) {
   #huaweiBand9 .huaweiBand9__container h2 {
+    font-size: -webkit-calc(22px + 28 * (100vw - 320px) / 704);
     font-size: calc(22px + 28 * (100vw - 320px) / 704);
   }
   #huaweiBand9 .huaweiBand9__container h3 {
+    font-size: -webkit-calc(20px + 10 * (100vw - 320px) / 704);
     font-size: calc(20px + 10 * (100vw - 320px) / 704);
   }
   #huaweiBand9 .huaweiband9Bezel-banner__bg {
+    height: -webkit-calc(344px + 344 * (100vw - 320px) / 703);
     height: calc(344px + 344 * (100vw - 320px) / 703);
   }
   #huaweiBand9 .huaweiband9Bezel-banner__text {
+    padding-top: -webkit-calc(0px + 40 * (100vw - 320px) / 703);
     padding-top: calc(0px + 40 * (100vw - 320px) / 703);
+    padding-right: -webkit-calc(10px + 30 * (100vw - 320px) / 703);
     padding-right: calc(10px + 30 * (100vw - 320px) / 703);
   }
   #huaweiBand9 .huaweiband9Light-banner__text p span {
+    font-size: -webkit-calc(20px + 26 * (100vw - 320px) / 704);
     font-size: calc(20px + 26 * (100vw - 320px) / 704);
   }
   #huaweiBand9 .huaweiband9-display__inner {
@@ -1138,7 +1544,10 @@ li {
   }
   #huaweiBand9 .huaweiband9-mainCol__text_06 {
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
     margin-right: -50%;
     right: auto;
   }
@@ -1146,6 +1555,7 @@ li {
     font-size: 45px;
   }
   #huaweiBand9 .huaweiband9Bezel-banner__text {
+    padding-top: -webkit-calc(0px + 30 * (100vw - 320px) / 671);
     padding-top: calc(0px + 30 * (100vw - 320px) / 671);
   }
   #huaweiBand9 .huaweiband9-slider__inner {
@@ -1213,6 +1623,7 @@ li {
     margin: 10px 0;
   }
   #huaweiBand9 .huaweiBand9__container h4 {
+    font-size: -webkit-calc(18px + 2 * (100vw - 320px) / 447);
     font-size: calc(18px + 2 * (100vw - 320px) / 447);
     margin-bottom: 10px;
   }
@@ -1244,9 +1655,11 @@ li {
   #huaweiBand9 .huaweiband9Bezel-banner__img {
     right: 25%;
     top: 150px;
+    height: -webkit-calc(100% - 150px);
     height: calc(100% - 150px);
   }
   #huaweiBand9 .huaweiband9Bezel-banner__text p span {
+    font-size: -webkit-calc(18px + 2 * (100vw - 320px) / 447);
     font-size: calc(18px + 2 * (100vw - 320px) / 447);
   }
   #huaweiBand9 .right-huaweiband9-slider-pagination {
@@ -1259,7 +1672,10 @@ li {
     background-image: url("../img/img06_mob.jpg");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    height: -webkit-calc(780px + 307 * (100vw - 320px) / 447);
     height: calc(780px + 307 * (100vw - 320px) / 447);
   }
   #huaweiBand9 .huaweiband9Light-banner__inner {
@@ -1270,11 +1686,14 @@ li {
   }
   #huaweiBand9 .huaweiband9Light-banner__text_right {
     margin: 0;
-    align-content: start;
+    -webkit-align-content: start;
+        -ms-flex-line-pack: start;
+            align-content: start;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
     row-gap: 20px;
   }
   #huaweiBand9 .huaweiband9-strap__inner {
@@ -1285,7 +1704,10 @@ li {
   }
   #huaweiBand9 .huaweiband9-strap__text_bott {
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
     margin-right: -50%;
     right: auto;
     padding: 10px;
@@ -1306,7 +1728,13 @@ li {
     margin-bottom: 25px;
   }
   #huaweiBand9 .huaweiband9-sleepingMode__inner {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 10px 10px;
   }
   #huaweiBand9 .huaweiband9-sleepingMode__item {
@@ -1371,6 +1799,7 @@ li {
     padding: 0 15px;
   }
   #huaweiBand9 .huaweiband9-power__time-day p span {
+    font-size: -webkit-calc(18px + 20 * (100vw - 320px) / 447);
     font-size: calc(18px + 20 * (100vw - 320px) / 447);
   }
   #huaweiBand9 .huaweiband9-conditions__content {
@@ -1393,7 +1822,10 @@ li {
   #huaweiBand9 .huaweiband9-mainCol__text_07 {
     top: 20px;
     right: 20px;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
   }
   #huaweiBand9 .huaweiband9-slider__inner {
     padding: 10px 0 15px;
@@ -1409,7 +1841,11 @@ li {
     margin-right: 0;
   }
   #huaweiBand9 .right-huaweiband9-slider-pagination {
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #huaweiBand9 .right-huaweiband9-slider__text p {
     text-align: center;
@@ -1428,8 +1864,9 @@ li {
   }
   #huaweiBand9 .huaweiband9-custom__row {
     grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 5px;
-         column-gap: 5px;
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
     row-gap: 20px;
   }
   #huaweiBand9 .huaweiband9-custom__item:nth-child(1) {
@@ -1437,12 +1874,32 @@ li {
     grid-row: span 1;
   }
   #huaweiBand9 .huaweiband9-custom__body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #huaweiBand9 .huaweiband9-waterproof__content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #huaweiBand9 .huaweiband9-waterproof__title {
     padding: 0 10px;
@@ -1504,8 +1961,9 @@ li {
   #huaweiBand9 .huaweiband9-healthCol__row {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 180px);
-    -moz-column-gap: 5px;
-         column-gap: 5px;
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
     row-gap: 20px;
   }
   #huaweiBand9 .huaweiband9-healthCol__item:nth-child(1) {
@@ -1513,12 +1971,32 @@ li {
     grid-row: span 1;
   }
   #huaweiBand9 .huaweiband9-healthCol__body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #huaweiBand9 .huaweiband9-power__content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #huaweiBand9 .huaweiband9-power__title {
     padding: 0 10px;
@@ -1536,7 +2014,13 @@ li {
     padding-bottom: 15px;
   }
   #huaweiBand9 .huaweiband9-conditions__content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #huaweiBand9 .huaweiband9-conditions__title {
     padding: 0 10px;
@@ -1559,7 +2043,13 @@ li {
     font-size: 14px;
   }
   #huaweiBand9 .huaweiband9-compatible__inner {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     gap: 0;
   }
   #huaweiBand9 .huaweiband9-compatible__text {
@@ -1577,6 +2067,7 @@ li {
     padding: 0 20px;
   }
   #huaweiBand9 .huaweiband9-mainCol__text-item p span {
+    font-size: -webkit-calc(26px + 16 * (100vw - 320px) / 159);
     font-size: calc(26px + 16 * (100vw - 320px) / 159);
   }
   #huaweiBand9 .huaweiband9Bezel-banner__text {
@@ -1587,6 +2078,7 @@ li {
   #huaweiBand9 .huaweiband9Bezel-banner__img {
     right: 40%;
     top: 220px;
+    height: -webkit-calc(100% - 220px);
     height: calc(100% - 220px);
   }
   #huaweiBand9 .huaweiband9-slider__title {
@@ -1615,8 +2107,18 @@ li {
     margin-bottom: 10px;
   }
   #huaweiBand9 .huaweiband9Sensor-banner__inner {
-    flex-direction: column;
-    align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+       -moz-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding: 10px 0;
   }
   #huaweiBand9 .huaweiband9Sensor-banner__item {
@@ -1626,6 +2128,7 @@ li {
     position: absolute;
     z-index: 7;
     bottom: 20px;
+    left: -webkit-calc(40px + 80 * (100vw - 320px) / 159);
     left: calc(40px + 80 * (100vw - 320px) / 159);
     right: 50%;
   }
@@ -1634,10 +2137,13 @@ li {
   }
   #huaweiBand9 .huaweiband9Sensor-banner__image {
     position: unset;
-    align-content: flex-end;
+    -webkit-align-content: flex-end;
+        -ms-flex-line-pack: end;
+            align-content: flex-end;
     margin-bottom: 10px;
   }
   #huaweiBand9 .huaweiband9Sensor-banner__image img {
+    margin-left: -webkit-calc(100px + 100 * (100vw - 320px) / 159);
     margin-left: calc(100px + 100 * (100vw - 320px) / 159);
     margin-right: 20px;
   }
@@ -1645,7 +2151,13 @@ li {
     padding: 0 10px;
   }
   #huaweiBand9 .huaweiband9-healthyMode__inner {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     padding: 10px 0;
   }
   #huaweiBand9 .huaweiband9-healthyMode__text {
@@ -1670,6 +2182,10 @@ li {
     background-position: -17%;
   }
   #huaweiBand9 .huaweiband9-sport__image_01 {
-    flex: 0 0 250px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 250px;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 250px;
+            flex: 0 0 250px;
   }
 }/*# sourceMappingURL=style.css.map */
